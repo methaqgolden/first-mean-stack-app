@@ -1,0 +1,34 @@
+<div class="container" ng-repeat="type in names track by $index" id="myHome">
+    <h1>{{$index}}</h1>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="thumbnail">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <h3 class="Well">{{type.name}}</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <h3 class="Well">{{type.price}}</h3>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <h3 class="Well">{{type.location}}</h3>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="thumbnail">
+                        <h3 class="Well">{{type.description}}</h3>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="thumbnail">
+                        <img ng-src={{type.img}}>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
